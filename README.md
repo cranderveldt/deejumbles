@@ -1,2 +1,2 @@
-# blanksite
-Blank Site
+# deejumbles.com
+This is the deejumbles site
