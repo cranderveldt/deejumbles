@@ -1,0 +1,66 @@
+.whoops {
+  font-size: 80px;
+}
+.home-page {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.rod-page {
+  background: #0f4c5f url("/images/rod-bg.png") center top repeat-x;
+  padding: 30px 0;
+}
+.logo {
+  max-width: 400px;
+  height: 288px;
+  margin: 0 auto 20px;
+  background: transparent url("/images/logo.png") center bottom no-repeat;
+  background-size: contain;
+}
+.title {
+  text-align: center;
+  margin: 0 0 30px;
+  h1 {
+    font-family: $title;
+    font-size: 50px;
+    line-height: 1;
+    color: #222;
+    margin: 0 0 10px;
+  }
+  h2 {
+    font-family: $title;
+    font-size: 25px;
+    line-height: 1;
+    letter-spacing: 12px;
+  }
+}
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 40px;
+  background: rgba(white, .8);
+  @include round(10px);
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
+.signup-container {
+  margin: 0 0 30px;
+  text-align: center;
+}
+.signup-button {
+  padding: 20px 30px;
+  background: #3da4b1;
+  color: white;
+  font-family: $title;
+  font-size: 24px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  @include round(10px);
+  &:hover {
+    background: lighten(#3da4b1, 10%);
+    color: rgba(white, .75);
+  }
+}
