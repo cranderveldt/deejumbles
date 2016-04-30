@@ -142,8 +142,14 @@ label {
   @include flex-gutters(3);
 }
 
-.row-space {
+.row-space, .b-space-5 {
   margin-bottom: 5px;
+}
+.b-space, .b-space-20 {
+  margin-bottom: 20px;
+}
+.b-space-40 {
+  margin-bottom: 40px;
 }
 
 .flex-row-defaults {
