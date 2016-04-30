@@ -101,7 +101,9 @@ li {
     margin: 0 0 5px;
   }
 }
-
+strong {
+  font-weight: bold;
+}
 label {
   font-weight: $font-weight-semibold;
   color: $input-color;
