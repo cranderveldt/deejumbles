@@ -38,12 +38,15 @@
 .container {
   max-width: 600px;
   margin: auto;
-  padding: 40px;
+  padding: 20px;
   background: rgba(white, .8);
   @include round(10px);
   font-size: 16px;
   line-height: 1.5;
   color: #666;
+  @include above-width($mobile) {
+    padding: 40px;
+  }
 }
 .signup-container {
   margin: 0 0 30px;
@@ -67,5 +70,26 @@
 .winner {
   i {
     color: #f2be30;
+  }
+}
+.twitch-button {
+  background: #6441a4;
+  @include round(4px);
+  color: white;
+  text-decoration: none;
+  line-height: 1;
+  margin: 0 0 30px;
+  font-family: $title;
+  font-size: 18px;
+  display: block;
+  padding: 20px 0;
+  @include above-width($mobile) {
+    display: inline-block;
+    font-size: 24px;
+    padding: 15px 30px;
+  }
+  &:hover {
+    color: white;
+    opacity: .5;
   }
 }
