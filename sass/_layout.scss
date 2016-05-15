@@ -72,8 +72,8 @@
     color: #f2be30;
   }
 }
-.twitch-button {
-  background: #6441a4;
+
+.external-button {
   @include round(4px);
   color: white;
   text-decoration: none;
@@ -92,4 +92,13 @@
     color: white;
     opacity: .5;
   }
+}
+.internal-button {
+  background: #3da4b1;
+}
+.twitch-button {
+  background: #6441a4;
+}
+.youtube-button {
+  background: #cc181e;
 }
