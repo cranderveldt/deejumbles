@@ -11,6 +11,12 @@
   background: #0f4c5f url("/images/rod-bg.png") center top repeat-x;
   padding: 30px 0;
 }
+.bingo-page {
+  background: white;
+  .container {
+    max-width: 1000px;
+  }
+}
 .logo {
   max-width: 400px;
   height: 288px;
@@ -104,13 +110,17 @@
 }
 
 .bingo-card {
-  background: transparent url("/images/bingo.png") center center no-repeat;
-  background-size: contain;
   width: 410px;
   height: 360px;
   @include flex-row-at(0);
   @include flex-wrap;
+  position: relative;
+  margin: 0 20px 30px;
   .bingo-tile {
+    width: 20%;
+    height: 72px;
+  }
+  .bingo-button {
     width: 20%;
     height: 72px;
     cursor: pointer;
@@ -119,9 +129,20 @@
     background: #eee;
   }
   .state-red {
-    background: red;
+    background: #d3002a;
   }
   .state-green {
-    background: green;
+    background: #22d65e;
+  }
+  .bingo-screen {
+    @include flex-row-at(0);
+    @include flex-wrap;
+    background: transparent url("/images/bingo.png") center center no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }

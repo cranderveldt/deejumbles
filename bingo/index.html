@@ -11,10 +11,15 @@
   <script src="/js/angular.js"></script>
   <script src="/js/script.js"></script>
 </head>
-<body ng-controller="Main" class="rod-page">
+<body ng-controller="Main" class="bingo-page">
   <div class="container">
-    <div class="bingo-card">
-      <div class="bingo-tile" ng-repeat="tile in bingo_tiles" ng-click="toggleTile(tile)" ng-class="bingoTileClasses(tile)"></div>
+    <div class="flex-row-all">
+      <div class="bingo-card" ng-repeat="card in cards">
+        <div class="bingo-tile" ng-repeat="tile in card" ng-class="bingoTileClasses(tile)"></div>
+        <div class="bingo-screen">
+          <div class="bingo-button" ng-repeat="tile in card" ng-click="toggleTile(tile)"></div>
+        </div>
+      </div>
     </div>
   </div>
 </body>
