@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en" ng-app="deejumbles">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Isaac Bingo</title>
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link href='https://fonts.googleapis.com/css?family=Varela+Round&effect=emboss' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="/js/jquery.js"></script>
+  <script src="/js/angular.js"></script>
+  <script src="/js/script.js"></script>
+</head>
+<body ng-controller="Main" class="rod-page">
+  <div class="container">
+    <div class="bingo-card">
+      <div class="bingo-tile" ng-repeat="tile in bingo_tiles" ng-click="toggleTile(tile)" ng-class="bingoTileClasses(tile)"></div>
+    </div>
+  </div>
+</body>
+</html>

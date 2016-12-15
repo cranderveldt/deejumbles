@@ -102,3 +102,26 @@
 .youtube-button {
   background: #cc181e;
 }
+
+.bingo-card {
+  background: transparent url("/images/bingo.png") center center no-repeat;
+  background-size: contain;
+  width: 410px;
+  height: 360px;
+  @include flex-row-at(0);
+  @include flex-wrap;
+  .bingo-tile {
+    width: 20%;
+    height: 72px;
+    cursor: pointer;
+  }
+  .state-gray {
+    background: #eee;
+  }
+  .state-red {
+    background: red;
+  }
+  .state-green {
+    background: green;
+  }
+}
